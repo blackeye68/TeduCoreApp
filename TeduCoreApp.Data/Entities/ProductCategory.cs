@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.ComponentModel.DataAnnotations.Schema;
 using TeduCoreApp.Data.Enums;
 using TeduCoreApp.Data.Interfaces;
 using TeduCoreApp.Infrastructure.SharedKernel;
 
 namespace TeduCoreApp.Data.Entities
 {
+    [Table("ProductCategories")]
     public class ProductCategory : DomainEntity<int>,
         IHasSeoMetaData, ISwithchable, ISortable, IDateTracking
     {
