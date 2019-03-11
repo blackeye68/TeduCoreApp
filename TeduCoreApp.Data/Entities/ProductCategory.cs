@@ -9,7 +9,7 @@ namespace TeduCoreApp.Data.Entities
 {
     [Table("ProductCategories")]
     public class ProductCategory : DomainEntity<int>,
-        IHasSeoMetaData, ISwithchable, ISortable, IDateTracking
+        IHasSeoMetaData, ISwitchable, ISortable, IDateTracking
     {
         public ProductCategory()
         {

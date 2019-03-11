@@ -2,7 +2,7 @@
 
 namespace TeduCoreApp.Data.Interfaces
 {
-    public interface ISwithchable
+    public interface ISwitchable
     {
         Status Status { set; get; }
     }

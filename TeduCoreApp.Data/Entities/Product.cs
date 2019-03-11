@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TeduCoreApp.Data.Enums;
 using TeduCoreApp.Data.Interfaces;
 using TeduCoreApp.Infrastructure.SharedKernel;
@@ -13,8 +9,8 @@ using TeduCoreApp.Infrastructure.SharedKernel;
 namespace TeduCoreApp.Data.Entities
 {
     [Table("Products")]
-    public class Product : DomainEntity<int>, 
-        ISwithchable, IDateTracking, IHasSeoMetaData
+    public class Product : DomainEntity<int>,
+        ISwitchable, IDateTracking, IHasSeoMetaData
     {
         [StringLength(255)]
         [Required]
@@ -57,7 +53,7 @@ namespace TeduCoreApp.Data.Entities
 
         public string SeoPageTitle { set; get; }
 
-        [Column(TypeName =("varchar"))]
+        [Column(TypeName = ("varchar"))]
         [StringLength(255)]
         public string SeoAlias { set; get; }
 
