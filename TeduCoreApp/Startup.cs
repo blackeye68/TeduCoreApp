@@ -79,7 +79,7 @@ namespace TeduCoreApp
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            dbInitializer.Seed();
+            dbInitializer.Seed().Wait();
         }
     }
 }
